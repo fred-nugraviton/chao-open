@@ -1,2 +1,2 @@
 # chao-open
-the open source Chao Enterprise Scheduler+Workflow repo.
+the java open source Chao Enterprise Scheduler+Workflow repo.
