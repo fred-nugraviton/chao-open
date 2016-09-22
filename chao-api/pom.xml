@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>com.nugraviton.chao</groupId>
+    <artifactId>chao</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../chao/pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>chao-api</artifactId>
+  <packaging>jar</packaging>
+  <description>The public APIs for define jobs and tasks.</description>
+
+</project>
