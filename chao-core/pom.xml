@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <parent>
+    <groupId>com.nugraviton.chao</groupId>
+    <artifactId>chao</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../chao/pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <inceptionYear>2016</inceptionYear>
+  <artifactId>chao-core</artifactId>
+  <packaging>jar</packaging>
+  <description>the core library.</description>
+    
+    <dependencies>
+    	<dependency>
+            <groupId>com.nugraviton.chao</groupId>
+            <artifactId>chao-api</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<dependency>                                    
+			<groupId>org.slf4j</groupId>                
+			<artifactId>jcl-over-slf4j</artifactId>     
+		</dependency>
+		<dependency>
+		   <groupId>org.reflections</groupId>
+		    <artifactId>reflections</artifactId>
+		</dependency>
+
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>	    
+  </dependencies>
+
+  <build>
+  	<finalName>${project.parent.artifactId}</finalName>
+	    <plugins>
+	    	<plugin>
+		      <groupId>org.apache.maven.plugins</groupId>
+		      <artifactId>maven-jar-plugin</artifactId>
+		      <configuration>
+		       	<excludes>
+		       		<exclude>**/console.properties</exclude>	     		
+		       		<exclude>**/messages.properties</exclude>
+		       		<exclude>**/conf.xml</exclude>
+		       		<exclude>**/logback.*</exclude>
+		       	</excludes>
+		      </configuration>
+		    </plugin>
+     		<plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-failsafe-plugin</artifactId>
+		        <configuration>
+          			<skipTests>${skip.failsafe.Tests}</skipTests>
+        		</configuration>
+		    </plugin>	        
+		</plugins>  
+	</build> 
+	<profiles>
+		<profile>
+			<id>license</id>
+			<build>
+				<plugins>
+					<plugin>
+				        <groupId>org.codehaus.mojo</groupId>
+				        <artifactId>license-maven-plugin</artifactId>
+				        <executions>
+				          <execution>
+				            <id>download-licenses</id>
+				            <goals>
+				              <goal>download-licenses</goal>
+				            </goals>
+				          </execution>
+				        </executions>
+				   </plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+	
+</project>
