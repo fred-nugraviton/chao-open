@@ -1,2 +1,2 @@
 # chao-open
-Open source Java Scheduler+Workflow
+Java open source Scheduler Workflow
