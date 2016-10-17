@@ -1,5 +1,5 @@
 language: java
 before_script: cd chao
-script: cd mvn clean install
+script: mvn clean install
 jdk:
   - oraclejdk8
