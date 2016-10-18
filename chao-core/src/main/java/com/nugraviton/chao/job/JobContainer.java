@@ -18,8 +18,6 @@ import com.nugraviton.chao.job.rmi.TaskDef;
  * 2. end task exit its process.
  * 3. max number of job process is defined in JobConfiguration.
  * 
- * TODO: implement the sleep/wake up, so a job can be put dormant.
- * 
  * Container uses this interface to deal with each Job which 
  * is loaded by its own parent-last class loader. So jobs are isolated
  * and cannot see each other. It is kind of simulating OSGI for 
