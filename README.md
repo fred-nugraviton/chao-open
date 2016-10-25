@@ -1,6 +1,6 @@
 # chao-open  open source Java scheduler + workflow
 
-Chao aims to proved a simeple yet powerful Java scheduler with useful workflow.
+Chao aims to provid a simeple yet powerful Java scheduler with useful workflow.
 
 
 
