@@ -1,5 +1,5 @@
 language: java
 before_script: cd chao
-script: mvn clean deploy
+script: mvn clean deploy -Pmaven-central
 jdk:
   - oraclejdk8
