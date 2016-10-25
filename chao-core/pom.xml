@@ -11,7 +11,8 @@
   <inceptionYear>2016</inceptionYear>
   <artifactId>chao-core</artifactId>
   <packaging>jar</packaging>
-  <description>the core library.</description>
+  <name>chao core jar</name>
+  <description>the chao core jar.</description>
     
     <dependencies>
     	<dependency>
@@ -56,6 +57,7 @@
      		<plugin>
 		        <groupId>org.apache.maven.plugins</groupId>
 		        <artifactId>maven-failsafe-plugin</artifactId>
+		        <version>${maven-failsafe-plugin.version}</version>
 		        <configuration>
           			<skipTests>${skip.failsafe.Tests}</skipTests>
         		</configuration>
