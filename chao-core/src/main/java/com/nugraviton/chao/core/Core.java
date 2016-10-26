@@ -55,8 +55,8 @@ public interface Core {
 	void shutdownNow();
 	
 	/**
-	 * Checks if Chao is shut down. Calling {@link Chao#shutdown()} 
-	 * or {@link Chao#shutdownNow()} puts Chao to shut down status.
+	 * Checks if Chao is shut down. Calling {@link #shutdown()} 
+	 * or {@link #shutdownNow()} puts Chao to shut down status.
 	 * 
 	 * @return boolean -- true if it is shut down, otherwise false.
 	 */
@@ -65,8 +65,8 @@ public interface Core {
 
 	/**
 	 * Checks if Chao is terminated which means Chao is shut down and no running sessions. 
-	 * Calling {@link Chao#shutdownNow()} terminates all running sessions and puts Chao to terminated immediately.
-	 * If {@link Chao#shutdown()} is called, Chao will wait for all running sessions to complete and puts itself 
+	 * Calling {@link #shutdownNow()} terminates all running sessions and puts Chao to terminated immediately.
+	 * If {@link #shutdown()} is called, Chao will wait for all running sessions to complete and puts itself 
 	 * to terminated status. 
 	 * 
 	 * @return boolean -- true if it is terminated, otherwise false.
@@ -84,11 +84,7 @@ public interface Core {
 	 * Puts the job to active status if it's inactive;
 	 * not effect if it's already active.
 	 * 
-	 * 
-	 * 
-	 * @param String jobName
-	 * @throws IllegalArgumentException if job cannot be found by given jobName.
-	 * @throws IllegalStateException if Chao is shut down.
+	 * @param jobName -- the name of job.
 	 */
 	void activateJob(String jobName);
 	
@@ -99,9 +95,7 @@ public interface Core {
 	 * 
 	 * An inactive job can be activated by calling {@link #activateJob(String)}.
 	 *   
-	 * @param String jobName
-	 * @throws IllegalArgumentException if job cannot be found by given jobName.
-	 * @throws IllegalStateException if Chao is shut down.
+	 * @param jobName -- the name of job
 	 */
 	
 	void deactivateJob(String jobName);

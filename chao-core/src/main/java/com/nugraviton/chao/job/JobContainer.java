@@ -33,7 +33,7 @@ public interface JobContainer extends TaskExecutable, Terminable, Activable{
 	
 	/**
 	 * Get a copy of all {@code TaskDef}s of this Job.
-	 * @return Map<JobDefId, RmiJobDef>
+	 * @return a map of TaskDef.
 	 */
 	public Map<String, TaskDef> getTaskDefs();
 	

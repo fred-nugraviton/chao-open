@@ -78,6 +78,7 @@ public abstract class StringUtils {
 	 * that commonly deals with Strings but generally has to iterate over
 	 * Objects since attributes may e.g. be primitive value objects as well.
 	 * @param str the candidate String
+	 * @return true if it's empty.
 	 * @since 3.2.1
 	 */
 	public static boolean isEmpty(Object str) {
@@ -87,7 +88,7 @@ public abstract class StringUtils {
 	/**
 	 * Check that the given CharSequence is neither {@code null} nor of length 0.
 	 * Note: Will return {@code true} for a CharSequence that purely consists of whitespace.
-	 * <p><pre class="code">
+	 * <pre class="code">
 	 * StringUtils.hasLength(null) = false
 	 * StringUtils.hasLength("") = false
 	 * StringUtils.hasLength(" ") = true
@@ -116,7 +117,7 @@ public abstract class StringUtils {
 	 * Check whether the given CharSequence has actual text.
 	 * More specifically, returns {@code true} if the string not {@code null},
 	 * its length is greater than 0, and it contains at least one non-whitespace character.
-	 * <p><pre class="code">
+	 * <pre class="code">
 	 * StringUtils.hasText(null) = false
 	 * StringUtils.hasText("") = false
 	 * StringUtils.hasText(" ") = false
@@ -301,6 +302,7 @@ public abstract class StringUtils {
 	 * ignoring upper/lower case.
 	 * @param str the String to check
 	 * @param prefix the prefix to look for
+	 * @return true if it's startsWithIgnoreCase.
 	 * @see java.lang.String#startsWith
 	 */
 	public static boolean startsWithIgnoreCase(String str, String prefix) {
@@ -323,6 +325,7 @@ public abstract class StringUtils {
 	 * ignoring upper/lower case.
 	 * @param str the String to check
 	 * @param suffix the suffix to look for
+	 * @return true if it's startsWithIgnoreCase.
 	 * @see java.lang.String#endsWith
 	 */
 	public static boolean endsWithIgnoreCase(String str, String suffix) {
@@ -347,6 +350,7 @@ public abstract class StringUtils {
 	 * @param str the original string (or StringBuilder)
 	 * @param index the index in the original string to start matching against
 	 * @param substring the substring to match at the given index
+	 * @return true if it's startsWithIgnoreCase.
 	 */
 	public static boolean substringMatch(CharSequence str, int index, CharSequence substring) {
 		for (int j = 0; j < substring.length(); j++) {
@@ -362,6 +366,7 @@ public abstract class StringUtils {
 	 * Count the occurrences of the substring in string s.
 	 * @param str string to search in. Return 0 if this is null.
 	 * @param sub string to search for. Return 0 if this is null.
+	 * @return integer
 	 */
 	public static int countOccurrencesOf(String str, String sub) {
 		if (str == null || sub == null || str.length() == 0 || sub.length() == 0) {
@@ -466,6 +471,7 @@ public abstract class StringUtils {
 	 * Unqualify a string qualified by a '.' dot character. For example,
 	 * "this.name.is.qualified", returns "qualified".
 	 * @param qualifiedName the qualified name
+	 * @return String
 	 */
 	public static String unqualify(String qualifiedName) {
 		return unqualify(qualifiedName, '.');
@@ -476,6 +482,7 @@ public abstract class StringUtils {
 	 * "this:name:is:qualified" returns "qualified" if using a ':' separator.
 	 * @param qualifiedName the qualified name
 	 * @param separator the separator
+	 * @return String
 	 */
 	public static String unqualify(String qualifiedName, char separator) {
 		return qualifiedName.substring(qualifiedName.lastIndexOf(separator) + 1);
@@ -520,7 +527,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Extract the filename from the given path,
-	 * e.g. "mypath/myfile.txt" -> "myfile.txt".
+	 * e.g. "mypath/myfile.txt" == "myfile.txt".
 	 * @param path the file path (may be {@code null})
 	 * @return the extracted filename, or {@code null} if none
 	 */
@@ -534,7 +541,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Extract the filename extension from the given path,
-	 * e.g. "mypath/myfile.txt" -> "txt".
+	 * e.g. "mypath/myfile.txt" == "txt".
 	 * @param path the file path (may be {@code null})
 	 * @return the extracted filename extension, or {@code null} if none
 	 */
@@ -555,7 +562,7 @@ public abstract class StringUtils {
 
 	/**
 	 * Strip the filename extension from the given path,
-	 * e.g. "mypath/myfile.txt" -> "mypath/myfile".
+	 * e.g. "mypath/myfile.txt" == "mypath/myfile".
 	 * @param path the file path (may be {@code null})
 	 * @return the path with stripped filename extension,
 	 * or {@code null} if none

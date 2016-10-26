@@ -199,7 +199,7 @@ public class TaskRegistrar {
 
 	/**
 	 * Reschedule the task with new session Id.
-	 * @param taskDef
+	 * @param taskDef -- a fixed delay task.
 	 */
 	public void tryRescheduleFixedDelayJob(TaskDef taskDef) {
 		

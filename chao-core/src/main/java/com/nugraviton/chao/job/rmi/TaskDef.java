@@ -32,11 +32,7 @@ public interface TaskDef extends Serializable {
 	public boolean isEndTask();
 	public TaskDef getTriggeredby();
 	public List<TaskDef> getNextTasks();
-	
-	/**
-	 * Create a simple version for RMI.
-	 * @return TaskDef
-	 */
+
 	public RmiTask getRmiTaskDef(UUID sessionId);
 
 }

@@ -17,9 +17,9 @@ public class Zipper {
     /**
      * Extracts a zip file specified by the zipFilePath to a directory specified by
      * destDirectory (will be created if does not exists)
-     * @param zipFilePath
-     * @param destDirectory
-     * @throws IOException
+     * @param zipFilePath -- path of files which will be zipped.
+     * @param destDirectory -- the path of zip file.
+     * @throws IOException -- when path don't exists.
      */
     public static void unzip(Path zipFilePath, Path destDirectory) throws IOException {
         
@@ -38,12 +38,7 @@ public class Zipper {
         }
     }
     
-    /**
-     * Extracts a zip entry (file entry)
-     * @param zipIn
-     * @param filePath
-     * @throws IOException
-     */
+
     private static void extractFile(ZipInputStream zipIn, Path filePath) throws IOException {
  
         try(BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(filePath.toFile()));){

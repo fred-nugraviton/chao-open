@@ -32,10 +32,10 @@ public interface RmiTaskExecutor extends Remote{
 	
 	
 	/**
-	 * Shut down this JVM immediately by calling System.exit(int);
+	 * Shut down this JVM immediately by calling System.exit(integer);
 	 * Intended to terminates this job.
 	 *   
-	 * @throws RemoteException
+	 * @throws RemoteException -- usually the it's network issue.
 	 */
 	public void exit(int status) throws RemoteException;
 	
@@ -43,7 +43,7 @@ public interface RmiTaskExecutor extends Remote{
 	 * Take a snapshot of currently JVM status.
 	 * 
 	 * @return RmiProcessInfo -- JVM info.
-	 * @throws RemoteException
+	 * @throws RemoteException -- usually the it's network issue.
 	 */
 	public RmiProcessInfo getStatus() throws RemoteException;
 	

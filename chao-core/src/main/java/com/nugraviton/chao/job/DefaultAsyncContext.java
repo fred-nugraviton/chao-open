@@ -31,8 +31,9 @@ public class DefaultAsyncContext implements AsyncContext, Serializable {
 	/**
 	 * Every task execution is associated with an {@link AsyncContext}.
 	 * 
-	 * @param sessionId -- the id of the session in which this task is executing.  
-	 * @param taskId -- the id of the task.
+	 * @param jobName -- job name  
+	 * @param taskName -- task name
+	 * @param sessionId -- session id 
 	 * @param exectionId -- the id of this execution of this task.
 	 */
 	public DefaultAsyncContext(String jobName, String taskName, UUID sessionId, UUID exectionId) {

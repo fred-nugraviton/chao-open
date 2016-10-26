@@ -65,9 +65,9 @@ public final class DefaultJobStreamHandler implements JobStreamHandler{
 	}
 	
 	/**
-	 * @param appName
-	 * @param jobProcessId
-	 * @param reader
+	 * Register a reader to this handler.
+	 * 
+	 * @param reader - a reader to register.
 	 */
 	@Override
 	public void registerStream(ProcessInputReader reader){

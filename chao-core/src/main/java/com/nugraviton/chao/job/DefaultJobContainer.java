@@ -71,7 +71,7 @@ public class DefaultJobContainer implements JobContainer{
 	
 	/**
 	 * Get snapshot of RmiTaskDef
-	 * @return Map<TaskName, TaskDef>
+	 * @return a map of taskDef with their names.
 	 */
 	@Override
 	public Map<String, TaskDef> getTaskDefs(){

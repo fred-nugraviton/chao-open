@@ -17,7 +17,7 @@ public interface TaskExecutable {
 	 * The task is always returned with a {@link AsyncContext}.
 	 * 
 	 * 
-	 * @param TaskEventPayloadImpl --  a run for a task.
+	 * @param taskEventPayload --  a run for a task.
 	 */
 	void taskStart(TaskEventPayload taskEventPayload);
 	
@@ -38,10 +38,7 @@ public interface TaskExecutable {
 	/**
 	 * Terminate the session immediately. 
 	 * 
-	 * @param appName -- String.
-	 * @param jobName -- String.
-	 * @param taskName -- String. 
-	 * @param sessionId -- UUID.
+	 * @param payload -- paylaod with info for terminating the seesion.
 	 */
 	void terminateSession(TaskEventPayload payload);
 

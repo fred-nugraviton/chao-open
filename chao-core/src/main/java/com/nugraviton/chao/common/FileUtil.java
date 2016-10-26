@@ -14,7 +14,7 @@ public class FileUtil {
 	
 	/**
 	 * Delete the directory if exists.
-	 * @param directory
+	 * @param directory -- the directory to delete. 
 	 */
 	public static void deleteIfExists(Path directory){
 		try {
@@ -44,7 +44,7 @@ public class FileUtil {
 	
 	/**
 	 * Create the directories if not exists.
-	 * @param paths
+	 * @param paths -- directories to be created.
 	 */
 	public static void createDirectoriesIfNotExists(Path... paths){
 		for (Path path : paths){
@@ -60,8 +60,8 @@ public class FileUtil {
 	
 	/**
 	 * Create the file if not exists.
-	 * @param path
-	 * @param attrs
+	 * @param path -- directories to be created.
+	 * @param attrs -- FileAttribute.
 	 */
 	public static void createFilesIfNotExists(Path path, FileAttribute<?>... attrs){
 		

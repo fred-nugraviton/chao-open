@@ -169,7 +169,7 @@ public class EventBus implements Runnable{
 
 	/**
 	 * A convenient method to publish an exception event.
-	 * @param e
+	 * @param e - Throwable
 	 */
 	public void publishExceptionEvent(Throwable e) {
 		ExceptionEvent errorEvent = new ExceptionEvent(e);

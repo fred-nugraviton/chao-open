@@ -25,7 +25,7 @@ public interface JobHandle {
 	
 	/**
 	 * start a task.
-	 * @param command -- wraps a task to run.
+	 * @param rmiTask -- task to run.
 	 * @return AnyncContext
 	 */
 	AsyncContext taskStart(RmiTask rmiTask);

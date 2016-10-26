@@ -10,7 +10,7 @@ import java.util.Date;
  * @author Juergen Hoeller
  * @since 3.0
  * @see TaskScheduler#schedule(Runnable, Trigger)
- * @see com.nugraviton.chao.schedule.springframework.scheduling.support.CronTrigger
+ * @see com.nugraviton.chao.schedule.CronTrigger
  */
 public interface Trigger {
 

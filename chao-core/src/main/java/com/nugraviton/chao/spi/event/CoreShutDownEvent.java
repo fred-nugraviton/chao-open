@@ -5,7 +5,6 @@ package com.nugraviton.chao.spi.event;
  * 
  * @author fred.wang@nuGraviton.com
  *
- * @param String -- name of this core.
  */
 public class CoreShutDownEvent {
 	

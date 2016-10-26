@@ -14,11 +14,6 @@ import com.nugraviton.chao.job.rmi.TaskDef;
  */
 public interface Workflow extends Serializable{
 
-	/**
-	 * Get the job meta data.
-	 * 
-	 * @return JobConfInfo -- wraps mainly what's in the {@link Job} annotation.
-	 */
 	JobDef	getJobDef();
 	
 	
@@ -46,8 +41,8 @@ public interface Workflow extends Serializable{
 	
 	/**
 	 * Get next tasks which should be triggered.
-	 * @param String -- taskName.
-	 * @return List<TaskDef> -- list of tasks triggered by given task.
+	 * @param taskName -- taskName.
+	 * @return list of tasks triggered by given task.
 	 */
 	List<TaskDef> getNextTasks(String taskName);
 	

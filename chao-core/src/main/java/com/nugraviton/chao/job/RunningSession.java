@@ -9,9 +9,7 @@ import com.nugraviton.chao.spi.event.TaskEventPayload;
 /**
  * A session is a serials of task executions in a job.
  * There are server side and client side sessions,
- * this one is for server side. See {@link SessionContext} 
- * for client one.
- * 
+ * this one is for server side. 
  * 
  * @author fred.wang@nuGraviton.com
  *
@@ -37,11 +35,7 @@ public interface RunningSession {
 	void taskComplete(AsyncContext asyncContext);
 	
 	void taskFail(AsyncContext asyncContext, Throwable throwable);
-
-	/**
-	 * true if all tasks are completed successfully.
-	 * @return
-	 */
+	
 	boolean isCompleted();
 
 	void close();

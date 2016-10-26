@@ -4,8 +4,6 @@ package com.nugraviton.chao.spi.event;
  * Signals the core is going to be shut down gracefully.
  * 
  * @author fred.wang@nuGraviton.com
- *
- * @param String -- name of this core.
  */
 public class ExceptionEvent {
 	

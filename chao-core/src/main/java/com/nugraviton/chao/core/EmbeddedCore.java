@@ -87,10 +87,10 @@ public class EmbeddedCore implements Core, TaskExecutable{
 
 	/**
 	 * Construct a core. All the given annotated packages are scanned 
-	 * to load jobs and tasks. This is the preferred way if your system 
+	 * to load jobs. This is the preferred way if your class path 
 	 * has a large number of classes.
 	 * 
-	 * @param String array -- all the packages that contains classes annotated with {@code com.nugraviton.chao.annotation.*}
+	 * @param packages -- packages to scan.
 	 */
 	public EmbeddedCore(String... packages){ 
 		this();
