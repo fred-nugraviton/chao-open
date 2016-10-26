@@ -17,7 +17,7 @@ env:
 
 before_script: cd chao
 
-install: mvn install -P !release -Dmaven.javadoc.skip=true -B -V
+script: mvn install -P !release -Dmaven.javadoc.skip=true -B -V
 
 cache:
   directories:

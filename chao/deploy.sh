@@ -3,4 +3,7 @@ if [ "$TRAVIS_BRANCH" = 'master' ] && [ "$TRAVIS_PULL_REQUEST" == 'false' ]; the
     mvn deploy -P release --settings settings.xml
 fi
 
+echo "deploy.sh"
+echo "branch=" && echao  "$TRAVIS_BRANCH" 
+
    
