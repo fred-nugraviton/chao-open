@@ -29,7 +29,7 @@ cache:
     - ~/.m2/repository
 
 after_success:
-  - chao/before-deploy.sh
-  - chao/deploy.sh
+  - ./chao/before-deploy.sh
+  - ./chao/deploy.sh
  
 
