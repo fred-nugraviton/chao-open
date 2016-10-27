@@ -25,8 +25,9 @@ script:
   - chmod +x chao/deploy.sh
 
 after_success:
-  - ./chao/before-deploy.sh
-  - ./chao/deploy.sh
+  - cd chao
+  - ./before-deploy.sh
+  - ./deploy.sh
   
 cache:
   directories:
