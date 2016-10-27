@@ -17,10 +17,12 @@ env:
 
 install: mvn install -P !release -Dmaven.javadoc.skip=true -B -V -f chao/pom.xml
 
-after_success:
+script:
   - cd chao
   - pwd
   - ls -a
+  - chmod 777 before-deploy.sh
+  - chmod 777 deploy.sh  
   - chmod u+x before-deploy.sh
   - chmod u+x deploy.sh
   - ./before-deploy.sh
