@@ -15,7 +15,8 @@ env:
     - # ^^ GPG_PASSPHRASE
     - secure: J5ql4cChNVE8usEvALUpZf1SObMZbyZwhXCoU9dXqsdhy0XdwuKuQZcNuasKzoERF5cbWTPVNQrbQaBXceTi6lQKOIWEPeYLaxk7ON7eKVkNMERX03mbB86+Pre1Ci8f9p6yd427+auzSK8FjPi37MtE8lAFj34/PQPn0lSXWyxAyj3XxHTohVt/ExK/NrQLLIOZr1Y8MMesdb9rBkS+LClSx5av05uJnI+hWzk38B23QUY10K7zstUpDDkzngo4Cl0lBjt1lNwGnZsbkqZS1dG50tyGWCnsML8iIaRCc2acw41DrX4JE8PZl303G4KIei7O8mD64xJCjZvqrSBL861rkmfiHFwoqWrCFgmwf3YfO52+GheBWAdoEr4eJ0bS92oXr397THrHHXvxgjMlxi5j6OWMK8K807klSOAFNy4MM3mwagkJtIwhVYnrawmMZxolimNtMciUypB5SYv7YBr1lY9CWB6SMyQu1JO4Q8RjK+UJ94SzOUNzFkTmW6NGZvbKw32Y7PvUgSArdLadyUbsX50N3/KluWsSqVpC/g/ReXhmoy4KXPan19eHfhXOgWQpanP3ienofdlKjGaC+wxzLjeUljXmS2hDCv/aw6ha64KmEgGoQ55ly20aEEGH9KXHflBDAlYAnotx8YeodgdmLQ3fHgi4O4IsTVfcy+0=
 
-before-install: cd chao
+before-install:
+  - cd chao
 
 install: mvn install -P !release -Dmaven.javadoc.skip=true -B -V
 
