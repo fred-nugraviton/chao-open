@@ -27,6 +27,7 @@ script:
 after_success:
   - cd chao
   - ls -a
+  - pwd
   - ./before-deploy.sh
   - ./deploy.sh
   
