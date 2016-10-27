@@ -21,8 +21,8 @@ deploy:
   skip_cleanup: true
 
 script:
-  - chmod +x chao/before-deploy.sh
-  - chmod +x chao/deploy.sh
+  - chmod 777 chao/before-deploy.sh
+  - chmod 777 chao/deploy.sh
 
 after_success:
   - cd chao
