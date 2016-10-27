@@ -25,8 +25,8 @@ script:
   - chmod 777 deploy.sh  
   - chmod u+x before-deploy.sh
   - chmod u+x deploy.sh
-  - ./before-deploy.sh
-  - ./deploy.sh
+  - bash -x before-deploy.sh
+  - bash -x deploy.sh
 
 cache:
   directories:
