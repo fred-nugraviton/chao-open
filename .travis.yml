@@ -26,8 +26,9 @@ script:
 
 after_success:
   - cd chao
-  - before-deploy.sh
-  - deploy.sh
+  - ls -a
+  - ./before-deploy.sh
+  - ./deploy.sh
   
 cache:
   directories:
