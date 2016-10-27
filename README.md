@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # chao-open  open source Java scheduler + workflow
 
 
@@ -28,8 +27,3 @@
 			System.out.println("Hello world! - second task");
 		}
 	}
-
-=======
-# chao-open
-Java open source Scheduler + Workflow
->>>>>>> refs/remotes/origin/master
