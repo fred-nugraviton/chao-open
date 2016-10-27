@@ -1,6 +1,5 @@
 # chao-open  open source Java scheduler + workflow
 
-
 	@Job(name = "hello-world")
 	public class HellloWorld {
 	
