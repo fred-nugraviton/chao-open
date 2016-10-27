@@ -17,8 +17,7 @@ env:
 
 install: mvn install -P !release -Dmaven.javadoc.skip=true -B -V -f chao/pom.xml
 
-before-script:
-  - cd chao
+
 
 script:
   - chmod +x chao/before-deploy.sh
@@ -31,5 +30,3 @@ cache:
 after_success:
   - ./chao/before-deploy.sh
   - ./chao/deploy.sh
- 
-
