@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # chao-open  open source Java scheduler + workflow
 
 
@@ -28,3 +29,7 @@
 		}
 	}
 
+=======
+# chao-open
+Java open source Scheduler + Workflow
+>>>>>>> refs/remotes/origin/master

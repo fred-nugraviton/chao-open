@@ -21,8 +21,6 @@ script:
   - cd chao
   - pwd
   - ls -a
-  - chmod 777 before-deploy.sh
-  - chmod 777 deploy.sh  
   - chmod u+x before-deploy.sh
   - chmod u+x deploy.sh
   - bash -x before-deploy.sh
