@@ -21,15 +21,15 @@ before-script:
   - cd chao
 
 script:
-  - chmod +x before-deploy.sh
-  - chmod +x deploy.sh
+  - chmod +x chao/before-deploy.sh
+  - chmod +x chao/deploy.sh
 
 cache:
   directories:
     - ~/.m2/repository
 
 after_success:
-  - before-deploy.sh
-  - deploy.sh
+  - chao/before-deploy.sh
+  - chao/deploy.sh
  
 
