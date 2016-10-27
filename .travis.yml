@@ -24,10 +24,10 @@ script:
   - chmod +x chao/before-deploy.sh
   - chmod +x chao/deploy.sh
 
+after_success:
+  - ./chao/before-deploy.sh
+  - ./chao/deploy.sh
+  
 cache:
   directories:
     - ~/.m2/repository
-
-after_success:
-  - sh ./chao/before-deploy.sh
-  - sh ./chao/deploy.sh
