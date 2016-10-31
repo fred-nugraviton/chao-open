@@ -1,5 +1,5 @@
 #!/bin/bash
 
 if [ "$TRAVIS_BRANCH" = 'master' ] && [ "$TRAVIS_PULL_REQUEST" == 'false' ]; then
-    mvn deploy -P release --settings settings.xml
+    mvn deploy -P release --settings mvnsettings.xml
 fi
