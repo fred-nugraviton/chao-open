@@ -11,7 +11,7 @@
 	<modules>
 		<module>../chao-api</module>
 		<module>../chao-core</module>
-		<module>../chao-helloworld</module>
+<!-- 		<module>../chao-helloworld</module> -->
 	</modules>
 	<url>https://github.com/nugraviton/chao-open/wiki</url>
 	<licenses>
