@@ -18,7 +18,7 @@ env:
 install:
   - cd chao
   - pwd
-  - if [ "$TRAVIS_BRANCH" = 'master' ] && [ "$TRAVIS_PULL_REQUEST" == 'false' ]; then openssl aes-256-cbc -K $encrypted_e12cfdc024de_key -iv $encrypted_e12cfdc024de_iv -in codesigning.asc.enc -out signingkey.asc -d; gpg --fast-import signingkey.asc;  mvn deploy -P release --settings mvnsettings.xml; else mvn install -P !release -Dmaven.javadoc.skip=true -B -V; fi
+  - if [ "$TRAVIS_BRANCH" = 'master' ] && [ "$TRAVIS_PULL_REQUEST" == 'false' ]; then mvn -X help:effective-settings; openssl aes-256-cbc -K $encrypted_e12cfdc024de_key -iv $encrypted_e12cfdc024de_iv -in codesigning.asc.enc -out signingkey.asc -d; gpg --fast-import signingkey.asc;  mvn deploy -P release --settings mvnsettings.xml; else mvn install -P !release -Dmaven.javadoc.skip=true -B -V; fi
 
 cache:
   directories:

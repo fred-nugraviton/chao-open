@@ -37,6 +37,10 @@
 			</roles>
 		</developer>
 	</developers>
+	<issueManagement>
+	     <system>GitHub Issue Tracker</system>
+	     <url>https://github.com/nugraviton/chao-open/issues</url>
+	  </issueManagement>	
 	<distributionManagement>
 	  <snapshotRepository>
 	    <id>ossrh</id>
