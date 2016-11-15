@@ -4,7 +4,7 @@ import javax.annotation.concurrent.ThreadSafe;
 
 /**
  * The sole interface that users interact with Chao.
- * It provides life cycle control of Chao and {@link Job}s.
+ * It provides life cycle control of Chao and jobs.
  * <pre>
  * {@code
  * 	{@literal @}Job(name = "hello-world")
@@ -34,7 +34,6 @@ import javax.annotation.concurrent.ThreadSafe;
  *	  }
  *	}
  *
- * </code>
  * </pre>
  *  
  * @author fred.wang@nuGraviton.com
@@ -81,7 +80,7 @@ public interface Chao {
 	}
 	
 	/**
-	 * Starts Chao, loads all {@link Job}s from class paths and
+	 * Starts Chao, loads all jobs from class paths and
 	 * puts all of them in active status.
 	 * No effect if it's already started.
 	 * 
@@ -90,7 +89,7 @@ public interface Chao {
 	void start();
 	
 	/**
-	 * Shuts down Chao and puts all {@link Job}s in inactive status.
+	 * Shuts down Chao and puts all jobs in inactive status.
 	 * No new session is started; will wait for all present running sessions to complete.
 	 * 	
 	 * Once this is called, the Chao instance cannot be restart and should be thrown away.
@@ -100,7 +99,7 @@ public interface Chao {
 	void shutdown();
 	
 	/**
-	 * Shuts down Chao, puts all {@link Job}s in inactive status and
+	 * Shuts down Chao, puts all jobs in inactive status and
 	 * terminates all present running sessions immediately.
 	 * 	
 	 * Once this is called, the Chao instance cannot be restart and should be thrown away.
@@ -141,7 +140,7 @@ public interface Chao {
 	 * 
 	 * @param jobName -- the name of a job.
 	 * @throws IllegalStateException if Chao is not started or shut down.
-	 * @throws illegalargumentexception if job does not exists.
+	 * @throws IllegalArgumentException if job does not exists.
 	 */
 	void activateJob(String jobName);
 	
