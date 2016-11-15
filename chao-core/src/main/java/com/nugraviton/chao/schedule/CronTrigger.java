@@ -3,8 +3,8 @@ package com.nugraviton.chao.schedule;
 import java.util.Date;
 import java.util.TimeZone;
 
-import com.nugraviton.chao.core.Trigger;
-import com.nugraviton.chao.core.TriggerContext;
+import com.nugraviton.chao.Trigger;
+import com.nugraviton.chao.TriggerContext;
 
 public class CronTrigger implements Trigger {
 

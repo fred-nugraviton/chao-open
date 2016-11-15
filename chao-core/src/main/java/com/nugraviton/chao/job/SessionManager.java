@@ -4,18 +4,15 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-
-import com.nugraviton.chao.core.event.SessionCompletedEvent;
-import com.nugraviton.chao.core.event.SessionStartedEvent;
-import com.nugraviton.chao.core.event.SessionTerminatedEvent;
-import com.nugraviton.chao.core.event.TaskCompletedEvent;
-import com.nugraviton.chao.core.event.EventBus;
-import com.nugraviton.chao.core.TaskExecutable;
-import com.nugraviton.chao.core.event.DefaultTaskEventPayload;
-import com.nugraviton.chao.core.event.TaskStartEvent;
-import com.nugraviton.chao.core.event.TaskStartedEvent;
+import com.nugraviton.chao.TaskExecutable;
+import com.nugraviton.chao.event.DefaultTaskEventPayload;
+import com.nugraviton.chao.event.EventBus;
+import com.nugraviton.chao.event.SessionCompletedEvent;
+import com.nugraviton.chao.event.SessionStartedEvent;
+import com.nugraviton.chao.event.SessionTerminatedEvent;
+import com.nugraviton.chao.event.TaskCompletedEvent;
+import com.nugraviton.chao.event.TaskStartEvent;
+import com.nugraviton.chao.event.TaskStartedEvent;
 import com.nugraviton.chao.job.rmi.TaskDef;
 import com.nugraviton.chao.spi.event.SessionEventPayload;
 import com.nugraviton.chao.spi.event.TaskEventPayload;

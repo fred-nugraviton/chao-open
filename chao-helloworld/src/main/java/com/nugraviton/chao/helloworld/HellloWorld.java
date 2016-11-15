@@ -1,17 +1,16 @@
 package com.nugraviton.chao.helloworld;
 
+import com.nugraviton.chao.Chao;
 import com.nugraviton.chao.annotation.Cron;
 import com.nugraviton.chao.annotation.Job;
 import com.nugraviton.chao.annotation.Task;
 import com.nugraviton.chao.annotation.TriggeredBy;
-import com.nugraviton.chao.core.Core;
-import com.nugraviton.chao.core.EmbeddedCore;
 
 @Job(name = "hello-world")
 public class HellloWorld {
 	
 	public static void main(String[] args) throws InterruptedException{
-		Core core = new EmbeddedCore();
+		Chao core = Chao.create();
 		core.start();
 		Thread.sleep(16000);
 		core.shutdown();

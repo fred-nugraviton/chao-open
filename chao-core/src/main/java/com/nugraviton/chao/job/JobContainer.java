@@ -2,9 +2,9 @@ package com.nugraviton.chao.job;
 
 import java.util.Map;
 
-import com.nugraviton.chao.core.Activable;
-import com.nugraviton.chao.core.TaskExecutable;
-import com.nugraviton.chao.core.Terminable;
+import com.nugraviton.chao.Activable;
+import com.nugraviton.chao.TaskExecutable;
+import com.nugraviton.chao.Terminable;
 import com.nugraviton.chao.job.rmi.TaskDef;
 
 /**

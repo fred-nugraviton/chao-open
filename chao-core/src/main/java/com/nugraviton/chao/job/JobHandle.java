@@ -2,7 +2,7 @@ package com.nugraviton.chao.job;
 
 import java.util.UUID;
 
-import com.nugraviton.chao.core.TaskExecutionInfo;
+import com.nugraviton.chao.TaskExecutionInfo;
 
 /**
  * Wraps a JVM process for a {@link RunningSession}  

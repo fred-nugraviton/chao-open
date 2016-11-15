@@ -3,7 +3,7 @@ package com.nugraviton.chao.job;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import com.nugraviton.chao.core.TaskExecutionInfo;
+import com.nugraviton.chao.TaskExecutionInfo;
 
 /*
  * A snapshot view of a task execution.

@@ -8,7 +8,7 @@ import java.util.UUID;
 import com.nugraviton.chao.job.rmi.RmiTaskExecutor;
 import com.nugraviton.chao.schedule.TaskStartException;
 import com.nugraviton.chao.job.TaskExecutionInfoImpl;
-import com.nugraviton.chao.core.TaskExecutionInfo;
+import com.nugraviton.chao.TaskExecutionInfo;
 import com.nugraviton.chao.job.ContainerException;
 import com.nugraviton.chao.job.JobHandle;
 import com.nugraviton.chao.job.rmi.RmiProcessInfo;
