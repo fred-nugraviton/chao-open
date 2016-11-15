@@ -6,7 +6,7 @@ import javax.annotation.concurrent.ThreadSafe;
  * The sole interface that users interact with Chao.
  * It provides life cycle control of Chao and jobs.
  * <pre>
- * {@code
+ * <code>
  * 	{@literal @}Job(name = "hello-world")
  *	public class HellloWorld {
  *		
@@ -33,7 +33,7 @@ import javax.annotation.concurrent.ThreadSafe;
  *		System.out.println("Hello world! - second task");
  *	  }
  *	}
- *
+ *</code>
  * </pre>
  *  
  * @author fred.wang@nuGraviton.com

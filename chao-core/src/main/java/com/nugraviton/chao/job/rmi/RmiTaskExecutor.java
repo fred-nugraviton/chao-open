@@ -35,6 +35,7 @@ public interface RmiTaskExecutor extends Remote{
 	 * Shut down this JVM immediately by calling System.exit(integer);
 	 * Intended to terminates this job.
 	 *   
+	 * @param status -- JVM exit code.   
 	 * @throws RemoteException -- usually the it's network issue.
 	 */
 	public void exit(int status) throws RemoteException;
