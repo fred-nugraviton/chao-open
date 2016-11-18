@@ -16,7 +16,6 @@ import org.slf4j.LoggerFactory;
 import com.nugraviton.chao.ChaoException;
 import com.nugraviton.chao.Embedded;
 import com.nugraviton.chao.TaskScheduler;
-import com.nugraviton.chao.annotation.EventListener;
 import com.nugraviton.chao.spi.event.ExceptionEvent;
 
 /**

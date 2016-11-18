@@ -1,4 +1,4 @@
-package com.nugraviton.chao.core;
+package com.nugraviton.chao;
 
 import static org.junit.Assert.assertNotNull;
 

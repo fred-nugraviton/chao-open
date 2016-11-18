@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.nugraviton.chao.Embedded;
-import com.nugraviton.chao.annotation.EventListener;
 
 /**
  * Listens to {@code TaskStartEvent} event;

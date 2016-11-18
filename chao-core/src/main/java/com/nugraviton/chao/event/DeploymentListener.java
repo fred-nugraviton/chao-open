@@ -20,7 +20,6 @@ import com.nugraviton.chao.annotation.Cron;
 import com.nugraviton.chao.annotation.FixedDelay;
 import com.nugraviton.chao.annotation.FixedRate;
 import com.nugraviton.chao.annotation.Job;
-import com.nugraviton.chao.annotation.EventListener;
 import com.nugraviton.chao.annotation.Task;
 import com.nugraviton.chao.job.Deployment;
 import com.nugraviton.chao.job.Workflow;

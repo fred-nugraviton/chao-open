@@ -1,4 +1,4 @@
-package com.nugraviton.chao.core;
+package com.nugraviton.chao;
 
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;

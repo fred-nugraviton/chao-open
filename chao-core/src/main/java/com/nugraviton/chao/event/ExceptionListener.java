@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 
 import com.nugraviton.chao.spi.event.ExceptionEvent;
 import com.nugraviton.chao.Embedded;
-import com.nugraviton.chao.annotation.EventListener;
 
 /**
  * Listens on {@code ExceptionEvent} event;

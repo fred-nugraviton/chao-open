@@ -1,4 +1,4 @@
-package com.nugraviton.chao.annotation;
+package com.nugraviton.chao.event;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

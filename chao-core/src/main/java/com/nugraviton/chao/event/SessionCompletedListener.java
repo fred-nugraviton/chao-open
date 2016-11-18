@@ -5,7 +5,6 @@ import java.lang.reflect.Method;
 import java.util.UUID;
 
 import com.nugraviton.chao.Embedded;
-import com.nugraviton.chao.annotation.EventListener;
 
 public class SessionCompletedListener {
 
