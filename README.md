@@ -1,4 +1,4 @@
-# chao-open  open source Java scheduler + workflow lib
+# Chao Open - Java open source scheduler + workflow library
 
 	@Job(name = "hello-world")
 	public class HelloWorld {
