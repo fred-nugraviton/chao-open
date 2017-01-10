@@ -1,7 +1,7 @@
 # chao-open  open source Java scheduler + workflow lib
 
 	@Job(name = "hello-world")
-	public class HellloWorld {
+	public class HelloWorld {
 	
 		public static void main(String[] args) throws InterruptedException{
 			Chao chao = Chao.create();
