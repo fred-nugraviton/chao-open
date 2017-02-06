@@ -53,7 +53,7 @@ Chao Open is released to maven central. To add to your dependencies:
 Following hello-world job consists of two tasks, start-task and second-task, chained up as a work flow. The start-task is a Cron task scheduled to run in every 5 seconds, after completion, the second-task will run. Every job run will create a new session(OS process). The number of concurrent session a job can run can be defined in @Job, by default it's unlimited.
 
 	@Job(name = "hello-world")
-	public class HellloWorld {
+	public class HelloWorld {
 	
 		public static void main(String[] args) throws InterruptedException{
 			Chao chao = Chao.create();
