@@ -42,7 +42,7 @@ A job run starts by its scheduled start task is triggered by JVM. Each job run c
 
 ## Getting Started
 
-Chao Open is released to maven central. To add to your dependencies:
+Chao Open is released to maven central. It requires JDK1.8 or later. To add to your dependencies:
 
    	<dependency>
 	    <groupId>com.nugraviton.chao</groupId>
